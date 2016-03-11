@@ -90,13 +90,12 @@ public class OfflineCenterInputActivity extends MifosBaseActivity implements Dat
                 branchId = Integer.parseInt(etBranchId.getEditableText().toString());
             }
             catch (NumberFormatException e){
-                Log.d("OfflineCenter", "Entered text not int");
-                Toaster.show(findViewById(android.R.id.content), "Please enter integers and try again");
+                Toaster.show(findViewById(android.R.id.content), getString(R.string.integer_error));
                 isAllDetailsFilled = false;
             }
         } else {
             isAllDetailsFilled = false;
-            Toaster.show(findViewById(android.R.id.content), "Please fill all the details correctly");
+            Toaster.show(findViewById(android.R.id.content), getString(R.string.details_error));
         }
         return isAllDetailsFilled;
     }

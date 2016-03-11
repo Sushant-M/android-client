@@ -260,7 +260,8 @@
     <string name="error_select_charge">Select Charge</string>
     <string name="error_select_product">Select Savings Product</string>
     <string name="error_select_officer">Select Officer</string>
-
+    <string name="integer_error">Please enter integers and try again</string>
+    <string name="details_error">Please fill all the details correctly</string>
 
 
     <string-array name="office_ids">
